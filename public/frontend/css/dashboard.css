@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+img {
+    width: 100%;
+}
+
+* {
+    text-transform: capitalize;
+    font-family: "Mukta", "sans-serif";
+}
+a {
+    text-decoration: none;
+}
+.active {
+    display: flex !important;
+}
+.show {
+    display: block !important;
+    transition: all 0.4s ease-in-out !important;
+}
+li {
+    list-style: none;
+}
+.navbar-brand,.nav-link {
+    color: white;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+#redirecthome {
+    margin-right: 25px;
+}
+#redirecthome a {
+    color: white;
+}
+#redirecthome a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
+.dashboard-leftside {
+    border: 5px solid violet;
+    background-color: rgb(0, 153, 255);
+    height: 100%;
+    width: 225px;
+}
+
+.dashboard-leftside ul li a{
+    color: whitesmoke;
+    cursor: pointer;
+}
+.dashboard-leftside ul li a:hover {
+    text-decoration: underline;
+}
+.dashboard-leftside ul li{
+    padding: 10px 15px;
+}
+.dashboard-leftside ul li span .fas{
+    color:aliceblue;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: gold;
+    padding: 5px;
+}
+.dashboard-leftside ul {
+    height: 100vh;
+}
+
+.update-modal {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+    width: 550px;
+    border: 1px solid silver;
+    background-color: white;
+    display: none;
+    z-index: 3;
+}
+ .mheader{
+    padding: 10px 15px;
+    border-bottom: 1px solid grey;
+    text-align: right;
+}
+ .mheader .close-btn i{
+    font-size: 20px;
+    padding: 5px;
+}
+ .mheader .close-btn i:hover {
+   color: red;
+   cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+ .mtitle h4{
+    padding: 10px 20px;
+}
+ .mbody {
+    padding: 0px 20px;
+}
+ .mfooter {
+    text-align: right;
+    padding: 10px;
+}
+ .mfooter button {
+    padding:10px 20px;
+}
+ label{
+    margin-top: 5px;
+}
+#overlay{
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+z-index: 2;
+display: none;
+background-color: rgb(44 42 42 / 52%);
+transition: all .4s ease-in-out;
+}
+.mfooter .cancel:hover
+.mfooter .update:hover{
+cursor: pointer;
+}
+
+.delete-modal {
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    background-color: white;
+    border: 1px solid grey;
+    display: none;
+    z-index: 3;
+}
+
+.update-modal span{
+    display: block;
+}
+
+#addProduct select[name=brand],input[name=name],textarea[name='desc'],select[name=category],input[name=quantity] {
+    border: 1px solid cornflowerblue;
+    outline: none;
+    box-shadow:1px 1px 1px 1px cornflowerblue;
+    text-align: center;
+
+}
+input[name='price']{
+    border: 1px solid goldenrod;
+    outline: none;
+    box-shadow:1px 1px 1px 1px goldenrod;
+}
+#addProduct  {
+background-color: coral;
+text-align: center;
+
+}
+#addProduct input[type=file]{
+  padding-left: 50px;
+}
+#addProduct form {
+    display: block;
+}
+
+#catdisplay {
+    text-align: center;
+}
+
+#addCategory  {
+ text-align: center;
+ padding-top: 20px;
+}
+#showcat {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#catinput,#showcat {
+    width: 350px;
+    text-align: center;
+}
+#catinput,#categorySelect,#brand {
+    box-shadow: 2px 2px 2px cornflowerblue;
+    outline: none;
+    border: 1px solid cornflowerblue;
+}
+#showcat {
+    box-shadow: 2px 2px 2px cornflowerblue;
+    outline: none;
+
+}
+.choice input {
+    margin-left: 20px;
+}
+.choice label {
+    margin-left: 20px;
+}
+.discount h4 {
+    color: white;
+}
+#pbefore,#brandname {
+    outline: none;
+    border: 1px solid cornflowerblue;
+    box-shadow: 2px 2px 2px cornflowerblue;
+}
+#before {
+    display: block;
+    transition: all .4s ease-in-out;
+}
+#before input {
+    
+    text-align: center;
+}
+input[name=price]{
+    text-align: center;
+}
+#before h4 {
+    color: white;
+    margin-top: 5px;
+}
+select[name=category_id],select[name=brand_id],input[name=name]{
+    width: 300px;
+    text-align: center;
+}
+#brandname {
+    text-align: center;
+    width: 350px;
+    height: 45px;
+}

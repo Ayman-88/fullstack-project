@@ -1,0 +1,746 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+img {
+    width: 100%;
+}
+
+* {
+    text-transform: capitalize;
+    font-family: "Mukta", "sans-serif";
+}
+a {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    margin-left: 60px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+}
+.navbar-brand:hover {
+    color: white;
+}
+.navbar-nav .nav-item {
+    padding-left: 1em;
+}
+
+.collapse {
+    margin-right: 6em;
+}
+.nav-item .active {
+    color: purple !important;
+}
+
+.navbar {
+    background-color: black !important;
+}
+
+.nav-item .nav-link:not(.nav-link .active) {
+    color: white;
+}
+.nav-item .nav-link:not(.nav-link .active):hover {
+    text-decoration: underline;
+}
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+.one {
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+.slider {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.slider img {
+    max-height: 600px;
+}
+.slider .image {
+    position: absolute;
+    left: 0px;
+    display: flex;
+}
+#prev,
+#next {
+    position: absolute;
+    top: 40%;
+}
+#prev {
+    left: -7%;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 30px;
+}
+#next {
+    right: -7%;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 30px;
+}
+#prev:hover,
+#next:hover {
+    background-color: white;
+    color: red;
+    border: 1px springgreen solid;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: rotateY(360deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.para1image {
+    width: 700px;
+}
+
+.para1image img {
+    max-height: 400px;
+}
+
+.para1 .header {
+    margin-top: 10px;
+    letter-spacing: 1em;
+    color: plum;
+    font-weight: 600;
+}
+.para1 button {
+    padding: 5px 15px;
+}
+.para1 button:hover {
+    background-color: brown;
+    color: black;
+    border: 1px solid orange;
+    transition: all 0.4s ease-in-out;
+}
+.para2image {
+    width: 300px;
+}
+.para2image img {
+    max-height: 200px;
+}
+.para2image1 {
+    margin-top: 20px;
+}
+.para2image1 img {
+    max-height: 250px;
+}
+.para2image {
+    position: relative;
+}
+.para2image .overlay,
+.para2image button {
+    position: absolute;
+}
+.para2image .overlay {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    height: 200px;
+    display: none;
+}
+.para2image button {
+    top: 92px;
+    left: 95px;
+    border: 1px solid snow;
+    color: white;
+    background-color: transparent;
+    padding: 5px 8px;
+    display: none;
+    cursor: pointer;
+}
+.para2image:hover .overlay,
+.para2image:hover button {
+    display: block;
+    transition: all 0.1s ease-in-out;
+}
+.sec3header {
+    position: relative;
+}
+.sec3header::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 447px;
+    height: 1px;
+    background: grey;
+}
+.sec3header::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 447px;
+    height: 1px;
+    background: grey;
+}
+.sec3links {
+    text-align: center;
+}
+.sec3links li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 25px;
+    margin-left: 20px;
+}
+.sec3links li a {
+    font-weight: 700px;
+    color: rgb(95, 94, 94);
+    font-size: 16px;
+}
+.sec3links li a:hover {
+    color: purple;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* .sec3image {
+    display: flex;
+    flex-wrap: wrap;
+} */
+/* .sec3image .image1,
+.sec3image .image2,
+.sec3image .image3,
+.sec3image .image4 {
+    width: 300px;
+    margin-left: 25px;
+} */
+.sec3image .image1 img,
+.sec3image .image2 img,
+.sec3image .image3 img,
+.sec3image .image4 img {
+    max-height: 300px;
+}
+
+.sec3image .image1,
+.sec3image .image2,
+.sec3image .image3,
+.sec3image .image4 {
+    position: relative;
+}
+
+.sec3image .image1 #discount,
+.sec3image .image3 #discount {
+    position: absolute;
+    color: white;
+    background: rgb(223, 83, 129);
+    width: 68px;
+    height: 57px;
+    left: 10px;
+    top: 43px;
+    border-radius: 50%;
+    padding: 17px 5px;
+}
+.sec3image .image1 .title,
+.sec3image .image2 .title,
+.sec3image .image3 .title,
+.sec3image .image4 .title {
+    text-align: center;
+    margin-top: 5px;
+}
+.price {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.price .before{
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.show a{
+    color: white;
+}
+
+.sec3links li .active {
+    color: purple;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.sec3image img {
+    height: 300px;
+}
+.sec3image .image1,
+.sec3image .image2,
+.sec3image .image3,
+.sec3image .image4 {
+    position: relative;
+}
+.sec3image .overlay {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.sec3image .image1:hover .overlay,
+.sec3image .image2:hover .overlay,
+.sec3image .image3:hover .overlay,
+.sec3image .image4:hover .overlay,
+.sec3image .image1:hover .show,
+.sec3image .image2:hover .show,
+.sec3image .image3:hover .show,
+.sec3image .image4:hover .show {
+    display: block !important;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.sec3image .image1 .show,
+.sec3image .image2 .show,
+.sec3image .image3 .show,
+.sec3image .image4 .show {
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    padding: 14px 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 27%;
+    left: 35%;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    display: none !important;
+}
+.sec4image img {
+    max-height: 300px;
+}
+.sec4title {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+.sec4title::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 0;
+    background-color: black;
+    width: 40%;
+    height: 1px;
+}
+
+.sec4title::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 0;
+    background-color: black;
+    width: 40%;
+    height: 1px;
+}
+.sec4img {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.sec4img .image {
+    flex-basis: 21%;
+    margin: 10px 15px;
+}
+.sec4img .image {
+    width: 300px;
+    position: relative;
+}
+.sec4img .image img {
+    height: 300px;
+}
+
+.sec4img .image #discount,
+.sec4img .image .overlay,
+.sec4img .image .show {
+    position: absolute;
+}
+
+
+.sec4img .image #discount {
+    top: 32px;
+    border-radius: 50%;
+    left: 3%;
+    width: 75px;
+    height: 65px;
+    background-color: palevioletred;
+    color: snow;
+    text-align: center;
+    padding: 12px;
+}
+
+.sec4img .image .overlay {
+    width: 235px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.sec4img .image .show  {
+    border-radius: 50%;
+    padding: 14px 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 27%;
+    left: 35%;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    display: none !important;
+}
+.sec4img .image:hover .overlay,
+.sec4img .image:hover .show {
+    display: block !important;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+#loadmore {
+    text-align: center;
+    margin-top: 50px;
+}
+#loadmore a {
+    padding: 3px 34px;
+    color: black;
+    background-color: snow;
+    border: 1px solid black;
+}
+
+.four #loadmore a:hover {
+    background-color: red;
+    color: gold;
+    transition: all 0.4s ease-in;
+}
+.fiveimg img {
+    height: 300px;
+}
+.fiveimg {
+    position: relative;
+    text-align: center;
+}
+.fiveimg .quotes,
+.fiveimg .image,
+.fiveimg .text,
+.fiveimg .name,
+.fiveimg .job {
+    position: absolute;
+}
+.fiveimg .quotes {
+    top: 37px;
+    left: 50%;
+}
+.fiveimg .quotes .fas {
+    font-size: 30px;
+    color: purple;
+}
+.fiveimg .image {
+    top: 148px;
+    left: 50%;
+}
+.fiveimg .image img {
+    width: 80px;
+    height: 80px;
+}
+.fiveimg .text {
+    top: 97px;
+    left: 20%;
+    color: grey;
+    font-weight: 600;
+    font-size: 17px;
+}
+.fiveimg .name {
+    top: 78%;
+    left: 50%;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.fiveimg .job {
+    top: 86%;
+    left: 50%;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.sec6header {
+    position: relative;
+    text-align: center;
+}
+.sec6header::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    background-color: black;
+    width: 42%;
+    height: 1px;
+}
+
+.sec6header::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 0;
+    background-color: black;
+    width: 42%;
+    height: 1px;
+}
+.six .card {
+    border: transparent;
+}
+.six .card img {
+    height: 300px;
+}
+.six .card .btn {
+    background-color: white;
+    border:black 1px solid;
+    color: black;
+}
+.six .card .btn:hover {
+background-color: cornflowerblue;
+color: white;
+transition: all .4s ease-in;
+}
+.sec7header {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.sec7header::before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    background-color: black;
+    width: 40%;
+    height: 1px;
+}
+
+.sec7header::after{
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 0;
+    background-color: black;
+    width: 40%;
+    height: 1px;
+}
+.sec7image{
+    width: 200px;
+}
+.sec7image img {
+    height:200px;
+
+}
+footer {
+    background-color: rgb(41, 40, 40);
+    overflow: hidden;
+}
+.footer-title h5 {
+    color: white;
+
+}
+.footer-li a {
+    color: grey;
+}
+.footer-li {
+    list-style: none;
+}
+.footer-li a:hover {
+  text-decoration: underline;
+    transition: all .4s ease-in;
+}
+.footer-subtitle {
+    color: grey;
+}
+footer .input {
+    border: grey;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    border:white 1px solid;
+    outline:none;
+    text-align: center;
+}
+.footer-subscribe {
+    margin-top: 10px;
+}
+.footer-subscribe a {
+    color: white;
+    background-color: palevioletred;
+    border: 1px solid white;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    padding: 2px 53px;
+}
+.footer-subscribe a:hover {
+    background-color: red;
+    color: white;
+    transition: all .4s ease-out;
+}
+.socialmedia-icons {
+    display: flex;
+    margin-top: 10px;
+
+}
+.socialmedia-icons .fab {
+    color: gray;
+    border: 1px transparent gainsboro;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+.socialmedia-icons .fab:hover {
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.end {
+    background-color: black;
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+.copyr {
+    color: grey;
+    margin-top: 12px;
+}
+.copyr span {
+    margin-right: 5px;
+}
+.cards-icons .fa-brands {
+    color: grey;
+    margin-top: 12px;
+    margin-left: 5px;
+    font-size: 30px;
+}
+.cards-icons .fa-brands:hover {
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.search {
+    border-radius: 4em;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 4px;
+    width: 300px;
+    margin: 5px 5px;
+    text-align: center;
+}
+#searchbar {
+    text-align: center;
+}
+
+#form-links {
+    text-align: right;
+}
+#form-links a {
+    color: red;
+    padding: 5px 5px;
+
+}
+#form-links a:hover {
+    text-decoration: underline;
+    transition: all .4s ease-in-out;
+}
+
+#loginform input,#registerform input{
+    width: 300px;
+}
+
+#loginform input:focus:not(input[type=submit]),#registerform input:focus:not(input[type=submit]){
+    outline: none;
+    border: 2px solid cornflowerblue;
+}
+#loginform input[type=submit],#registerform input[type=submit]{
+    margin-top: 10px;
+}
+#loginform input[type=submit]:hover{
+    background-color: crimson;
+    color: gold;
+    cursor: pointer;
+    border: none;
+}
+#registerform input[type=submit]:hover{
+    background-color: sienna;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+#forgetpassword{
+    margin-top: 5px;
+    display: inline-block;
+}
+#forgetpassword:hover {
+    text-decoration: underline;
+}
+.forgetpassword #login:hover {
+    text-decoration: underline;
+}
+
+ #registerform #loginlink ,#registerlink {
+    display: inline-block;
+    margin-top: 5px;
+}
+#registerform #loginlink:hover, #registerlink:hover {
+    text-decoration: underline;
+}
+.show {
+    display: block !important;
+    transition: all .4s ease-in-out !important;
+}
+
+.active {
+    display: flex !important;
+}
+.rounded{
+    width: 30%;
+    margin-left: 30%;
+    margin-bottom: 1px;
+}
+input[type=search]{
+    text-align: center;
+}
+#search-addon{
+    color: white;
+    background-color: rgba(0, 0, 255, 0.897);
+}
+#search-addon:hover {
+    opacity: 0.8;
+}
+#mycart i {
+    color: cornflowerblue;
+}
+
+.input-group {
+    position: relative;
+}
+.searchresults {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: 40px;
+    left: 0;
+    width: 100%;
+   text-align: left;
+   list-style: none;
+}
+.searchresults button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    text-align: left;
+}
+.searchresults button:hover {
+    background-color: rgb(243, 240, 240);
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+*{
+    font-family: 'Mukta', sans-serif;
+}
+#header-container{
+border-bottom: 1px solid gainsboro;
+padding: 10px 0px;
+}
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#emptycartmessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#emptycartmessage {
+    color: dimgray;
+}
+.productquantity {
+    border: 1px solid white;
+    background-color:rgb(177, 174, 174);
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: white;
+}

@@ -1,0 +1,2 @@
+<title> @section('title')</title>
+

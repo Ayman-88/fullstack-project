@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+img {
+    width: 100%;
+}
+
+* {
+    text-transform: capitalize;
+    font-family: "Mukta", "sans-serif";
+}
+a {
+    text-decoration: none;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.image img {
+    height: 400px;
+    width: 700px;
+    border: 1px solid salmon;
+}
+
+.price .before {
+padding: 4px;
+display: inline-block;
+margin-right: 1px;
+text-decoration: line-through;
+}
+.price span {
+    padding: 4px;
+}
+.price {
+    text-align: center;
+}
+
+.price .after {
+    font-size: 20px;
+    font-weight: 800;
+}
+.desc {
+    text-align: center;
+}
+.desc legend {
+    font-weight: bolder;
+}
+
+.desc p {
+font-weight:500;
+    font-size: 18px;
+}
+.quantity {
+    text-align: center;
+}
+.productname {
+    text-align: center;
+}
+.shop button {
+    margin: 3px;
+}
+.shop  {
+    text-align: center;
+}
+
+.category,.brand {
+    text-align: center;
+}
