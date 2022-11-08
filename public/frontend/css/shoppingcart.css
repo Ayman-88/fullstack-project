@@ -2,7 +2,11 @@
 
 *{
     font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 #header-container{
 border-bottom: 1px solid gainsboro;
 padding: 10px 0px;
@@ -29,4 +33,18 @@ padding: 10px 0px;
     padding: 10px 10px;
     border-radius: 15px;
     color: white;
+}
+
+@media (max-width:450px){
+ 
+.productimage img  {
+    width: 125px !important;
+    height: 125px !important;
+}
+.productquantity {
+    width: auto;
+}
+.body-container {
+    justify-content: center;
+}
 }

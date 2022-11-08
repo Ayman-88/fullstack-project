@@ -87,8 +87,8 @@
     <section class="one">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-6 col-xs-3">
-                    <section class="one">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-xs-3">
+                    <div class="carouselparent" >
                         <div class="slider">
                             <div class="image">
                                 <img src="{{ asset('frontend/gallery/1.jpg') }}" alt="">
@@ -101,7 +101,7 @@
                             <button id="prev"><i class="fas fa-angle-left"></i></button>
                             <button id="next"><i class="fas fa-angle-right"></i></button>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
     </section>
     <!--section2-->
     <!--section3-->
-    <section class="three col-lg-12 col-md-6 col-sm-3 col-xs-3">
+    <section class="three col-lg-12 col-md-12 col-sm-3 col-xs-3">
         <div class="container mt-5">
             <div class="row">
                 <div class="sec3header text-center">
@@ -211,7 +211,7 @@
                 <div class="sec4title">
                     <h2>trending item</h2>
                 </div>
-                <div class="sec4img col-lg-12 col-md-6 col-sm-3 col-xs-3">
+                <div class="sec4img col-lg-12 col-md-12 col-sm-6 col-xs-3">
                     <div class="image">
                         <img src="{{ asset('frontend/gallery/bags1.jpg') }}" alt="">
                         <div class="title">
@@ -304,7 +304,7 @@
                 </div>
                 <div id="loadmore"><a href="#">loadmore</a></div>
                 <!--------->
-                <div id="viewmore" class="sec4img mt-50  col-lg-12 col-md-6 col-sm-3 col-xs-3"
+                <div id="viewmore" class="sec4img mt-50  col-lg-12 col-md-12 col-sm-6 col-xs-3"
                     style="display: none">
                     <div class="image">
                         <img src="{{ asset('frontend/gallery/slippers1.jpg') }}" alt="">
@@ -403,7 +403,7 @@
     <section class="five mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-3 col-xs-3">
+                <div class="col-lg-12 col-md-12 col-sm-3 col-xs-3">
                     <div class="fiveimg">
                         <img src="{{ asset('frontend/gallery/tie shoelaces.jpg') }}" alt="">
                         <div class="quotes"><i class="fas fa-quote-left"></i></div>

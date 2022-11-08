@@ -247,16 +247,16 @@ a {
     margin-top: 5px;
 }
 .price {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.price .before{
+.price .before {
     text-decoration: line-through;
     font-size: 15px;
     margin-right: 10px;
 }
-.show a{
+.show a {
     color: white;
 }
 
@@ -363,7 +363,6 @@ a {
     position: absolute;
 }
 
-
 .sec4img .image #discount {
     top: 32px;
     border-radius: 50%;
@@ -384,7 +383,7 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
 }
-.sec4img .image .show  {
+.sec4img .image .show {
     border-radius: 50%;
     padding: 14px 18px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -402,8 +401,6 @@ a {
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
-
-
 
 #loadmore {
     text-align: center;
@@ -501,20 +498,20 @@ a {
 }
 .six .card .btn {
     background-color: white;
-    border:black 1px solid;
+    border: black 1px solid;
     color: black;
 }
 .six .card .btn:hover {
-background-color: cornflowerblue;
-color: white;
-transition: all .4s ease-in;
+    background-color: cornflowerblue;
+    color: white;
+    transition: all 0.4s ease-in;
 }
 .sec7header {
     margin-top: 50px;
     text-align: center;
     position: relative;
 }
-.sec7header::before{
+.sec7header::before {
     content: "";
     position: absolute;
     top: 18px;
@@ -524,7 +521,7 @@ transition: all .4s ease-in;
     height: 1px;
 }
 
-.sec7header::after{
+.sec7header::after {
     content: "";
     position: absolute;
     top: 18px;
@@ -533,12 +530,11 @@ transition: all .4s ease-in;
     width: 40%;
     height: 1px;
 }
-.sec7image{
+.sec7image {
     width: 200px;
 }
 .sec7image img {
-    height:200px;
-
+    height: 200px;
 }
 footer {
     background-color: rgb(41, 40, 40);
@@ -546,7 +542,6 @@ footer {
 }
 .footer-title h5 {
     color: white;
-
 }
 .footer-li a {
     color: grey;
@@ -555,8 +550,8 @@ footer {
     list-style: none;
 }
 .footer-li a:hover {
-  text-decoration: underline;
-    transition: all .4s ease-in;
+    text-decoration: underline;
+    transition: all 0.4s ease-in;
 }
 .footer-subtitle {
     color: grey;
@@ -565,8 +560,8 @@ footer .input {
     border: grey;
     background-color: rgb(41, 40, 40);
     color: white;
-    border:white 1px solid;
-    outline:none;
+    border: white 1px solid;
+    outline: none;
     text-align: center;
 }
 .footer-subscribe {
@@ -583,12 +578,11 @@ footer .input {
 .footer-subscribe a:hover {
     background-color: red;
     color: white;
-    transition: all .4s ease-out;
+    transition: all 0.4s ease-out;
 }
 .socialmedia-icons {
     display: flex;
     margin-top: 10px;
-
 }
 .socialmedia-icons .fab {
     color: gray;
@@ -599,7 +593,7 @@ footer .input {
 .socialmedia-icons .fab:hover {
     color: white;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 .end {
     background-color: black;
@@ -624,7 +618,7 @@ footer .input {
 .cards-icons .fa-brands:hover {
     color: white;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 .search {
     border-radius: 4em;
@@ -645,37 +639,39 @@ footer .input {
 #form-links a {
     color: red;
     padding: 5px 5px;
-
 }
 #form-links a:hover {
     text-decoration: underline;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-#loginform input,#registerform input{
+#loginform input,
+#registerform input {
     width: 300px;
 }
 
-#loginform input:focus:not(input[type=submit]),#registerform input:focus:not(input[type=submit]){
+#loginform input:focus:not(input[type="submit"]),
+#registerform input:focus:not(input[type="submit"]) {
     outline: none;
     border: 2px solid cornflowerblue;
 }
-#loginform input[type=submit],#registerform input[type=submit]{
+#loginform input[type="submit"],
+#registerform input[type="submit"] {
     margin-top: 10px;
 }
-#loginform input[type=submit]:hover{
+#loginform input[type="submit"]:hover {
     background-color: crimson;
     color: gold;
     cursor: pointer;
     border: none;
 }
-#registerform input[type=submit]:hover{
+#registerform input[type="submit"]:hover {
     background-color: sienna;
     color: white;
     cursor: pointer;
     border: none;
 }
-#forgetpassword{
+#forgetpassword {
     margin-top: 5px;
     display: inline-block;
 }
@@ -686,30 +682,32 @@ footer .input {
     text-decoration: underline;
 }
 
- #registerform #loginlink ,#registerlink {
+#registerform #loginlink,
+#registerlink {
     display: inline-block;
     margin-top: 5px;
 }
-#registerform #loginlink:hover, #registerlink:hover {
+#registerform #loginlink:hover,
+#registerlink:hover {
     text-decoration: underline;
 }
 .show {
     display: block !important;
-    transition: all .4s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
 }
 
 .active {
     display: flex !important;
 }
-.rounded{
+.rounded {
     width: 30%;
     margin-left: 30%;
     margin-bottom: 1px;
 }
-input[type=search]{
+input[type="search"] {
     text-align: center;
 }
-#search-addon{
+#search-addon {
     color: white;
     background-color: rgba(0, 0, 255, 0.897);
 }
@@ -730,8 +728,8 @@ input[type=search]{
     top: 40px;
     left: 0;
     width: 100%;
-   text-align: left;
-   list-style: none;
+    text-align: left;
+    list-style: none;
 }
 .searchresults button {
     padding: 10px;
@@ -743,4 +741,113 @@ input[type=search]{
 }
 .searchresults button:hover {
     background-color: rgb(243, 240, 240);
+}
+
+@media (max-width: 450px) {
+    .rounded {
+        width: auto; 
+         margin-left: 0; 
+         margin-bottom: 0;
+    }
+    .sec4img {
+        justify-content: center;
+    }
+    .silder .image img {
+        width: auto;
+        max-height: 300px;
+    }
+    .slider {
+        height: 300px;
+    }
+    #prev,
+    #next {
+        top: 35%;
+    }
+    .para1image {
+        width: auto;
+    }
+    .para2image {
+        margin-top: 40px;
+        width: auto;
+    }
+    .para2image .overlay {
+        width: 100%;
+    }
+    .sec4image {
+        margin-top: 40px;
+    }
+    .five .text {
+        left: 0;
+    }
+    .fiveimg .image {
+        top: 216px;
+        left: 43%;
+    }
+    .fiveimg img {
+        height: 400px;
+    }
+    .fiveimg .job {
+        left: 44%;
+    }
+    .fiveimg .name {
+        left: 39%;
+    }
+    .sec3header::after {
+        width: 100%;
+    }
+    .six .card {
+        width: auto !important;
+    }
+}
+@media (min-width: 451px) and (max-width: 1000px) {
+    .rounded {
+        width: auto; 
+         margin-left: 0; 
+         margin-bottom: 0;
+    }
+    .slider {
+        width: 650px;
+    }
+    .slider .image img {
+        width: 650px;
+    }
+    #prev {
+        left: -2%;
+    }
+    #next {
+        right: -3%;
+    }
+    .para1image {
+        width: auto;
+    }
+    .sec4image {
+        margin-bottom: 50px;
+    }
+    .sec4img {
+        justify-content: center;
+    }
+}
+@media(width:540px){
+    .slider {
+        width: auto;
+    }
+    .slider .image img {
+        width: auto;
+    }
+    .rounded {
+        width: auto; 
+         margin-left: 0; 
+         margin-bottom: 0;
+    }
+}
+@media (min-width: 1001px) and(max-width:1368px) {
+    .one #carouselparent {
+        width: auto !important;
+    }
+    .rounded {
+        width: auto; 
+         margin-left: 0; 
+         margin-bottom: 0;
+    }
+
 }

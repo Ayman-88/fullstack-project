@@ -7,6 +7,8 @@ img {
 * {
     text-transform: capitalize;
     font-family: "Mukta", "sans-serif";
+    padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -21,10 +23,11 @@ a {
 li {
     list-style: none;
 }
-.navbar-brand,.nav-link {
+.navbar-brand,
+.nav-link {
     color: white;
 }
-.nav-link:hover{
+.nav-link:hover {
     text-decoration: underline;
 }
 #redirecthome {
@@ -33,37 +36,34 @@ li {
 #redirecthome a {
     color: white;
 }
-#redirecthome a:hover{
+#redirecthome a:hover {
     text-decoration: underline;
-    color:black;
+    color: black;
 }
 
 .dashboard-leftside {
     border: 5px solid violet;
     background-color: rgb(0, 153, 255);
     height: 100%;
-    width: 225px;
+   
 }
 
-.dashboard-leftside ul li a{
+.dashboard-leftside ul li a {
     color: whitesmoke;
     cursor: pointer;
 }
 .dashboard-leftside ul li a:hover {
     text-decoration: underline;
 }
-.dashboard-leftside ul li{
+.dashboard-leftside ul li {
     padding: 10px 15px;
 }
-.dashboard-leftside ul li span .fas{
-    color:aliceblue;
+.dashboard-leftside ul li span .fas {
+    color: aliceblue;
     margin-right: 5px;
     border-radius: 50%;
     background-color: gold;
     padding: 5px;
-}
-.dashboard-leftside ul {
-    height: 100vh;
 }
 
 .update-modal {
@@ -76,51 +76,50 @@ li {
     display: none;
     z-index: 3;
 }
- .mheader{
+.mheader {
     padding: 10px 15px;
     border-bottom: 1px solid grey;
     text-align: right;
 }
- .mheader .close-btn i{
+.mheader .close-btn i {
     font-size: 20px;
     padding: 5px;
 }
- .mheader .close-btn i:hover {
-   color: red;
-   cursor: pointer;
-    transition: all .4s ease-in-out;
+.mheader .close-btn i:hover {
+    color: red;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
- .mtitle h4{
+.mtitle h4 {
     padding: 10px 20px;
 }
- .mbody {
+.mbody {
     padding: 0px 20px;
 }
- .mfooter {
+.mfooter {
     text-align: right;
     padding: 10px;
 }
- .mfooter button {
-    padding:10px 20px;
+.mfooter button {
+    padding: 10px 20px;
 }
- label{
+label {
     margin-top: 5px;
 }
-#overlay{
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-width: 100%;
-z-index: 2;
-display: none;
-background-color: rgb(44 42 42 / 52%);
-transition: all .4s ease-in-out;
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background-color: rgb(44 42 42 / 52%);
+    transition: all 0.4s ease-in-out;
 }
-.mfooter .cancel:hover
-.mfooter .update:hover{
-cursor: pointer;
+.mfooter .cancel:hover .mfooter .update:hover {
+    cursor: pointer;
 }
 
 .delete-modal {
@@ -133,29 +132,31 @@ cursor: pointer;
     z-index: 3;
 }
 
-.update-modal span{
+.update-modal span {
     display: block;
 }
 
-#addProduct select[name=brand],input[name=name],textarea[name='desc'],select[name=category],input[name=quantity] {
+#addProduct select[name="brand"],
+input[name="name"],
+textarea[name="desc"],
+select[name="category"],
+input[name="quantity"] {
     border: 1px solid cornflowerblue;
     outline: none;
-    box-shadow:1px 1px 1px 1px cornflowerblue;
+    box-shadow: 1px 1px 1px 1px cornflowerblue;
     text-align: center;
-
 }
-input[name='price']{
+input[name="price"] {
     border: 1px solid goldenrod;
     outline: none;
-    box-shadow:1px 1px 1px 1px goldenrod;
+    box-shadow: 1px 1px 1px 1px goldenrod;
 }
-#addProduct  {
-background-color: coral;
-text-align: center;
-
+#addProduct {
+    background-color: coral;
+    text-align: center;
 }
-#addProduct input[type=file]{
-  padding-left: 50px;
+#addProduct input[type="file"] {
+    padding-left: 50px;
 }
 #addProduct form {
     display: block;
@@ -165,20 +166,23 @@ text-align: center;
     text-align: center;
 }
 
-#addCategory  {
- text-align: center;
- padding-top: 20px;
+#addCategory {
+    text-align: center;
+    padding-top: 20px;
 }
 #showcat {
     padding: 10px 0px;
     text-align: center;
 }
 
-#catinput,#showcat {
+#catinput,
+#showcat {
     width: 350px;
     text-align: center;
 }
-#catinput,#categorySelect,#brand {
+#catinput,
+#categorySelect,
+#brand {
     box-shadow: 2px 2px 2px cornflowerblue;
     outline: none;
     border: 1px solid cornflowerblue;
@@ -186,7 +190,6 @@ text-align: center;
 #showcat {
     box-shadow: 2px 2px 2px cornflowerblue;
     outline: none;
-
 }
 .choice input {
     margin-left: 20px;
@@ -197,27 +200,29 @@ text-align: center;
 .discount h4 {
     color: white;
 }
-#pbefore,#brandname {
+#pbefore,
+#brandname {
     outline: none;
     border: 1px solid cornflowerblue;
     box-shadow: 2px 2px 2px cornflowerblue;
 }
 #before {
     display: block;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 #before input {
-    
     text-align: center;
 }
-input[name=price]{
+input[name="price"] {
     text-align: center;
 }
 #before h4 {
     color: white;
     margin-top: 5px;
 }
-select[name=category_id],select[name=brand_id],input[name=name]{
+select[name="category_id"],
+select[name="brand_id"],
+input[name="name"] {
     width: 300px;
     text-align: center;
 }
@@ -225,4 +230,69 @@ select[name=category_id],select[name=brand_id],input[name=name]{
     text-align: center;
     width: 350px;
     height: 45px;
+}
+
+@media (max-width: 450px) {
+    .dashboard-leftside ul {
+        height: auto;
+    }
+    .dashboard-leftside {
+        width: auto;
+    }
+    table {
+        table-layout: fixed;
+    }
+    tbody tr td:last-child {
+        display: block !important;
+    }
+    tbody tr td {
+        font-size: 8px;
+    }
+    thead tr th {
+        font-size: 8px;
+    }
+    tbody tr td:last-child button {
+        padding: 4px 4px;
+    }
+    tbody tr td:last-child a {
+        padding: 4px 4px;
+    }
+    textarea[name="desc"] {
+        width: 100%;
+    }
+    img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    #catinput, #showcat,#brandname,#categorySelect,#brand,input[name=name] {
+        width: auto;
+    }
+}
+@media (min-width: 451px) and (max-width: 1000px) {
+    .dashboard-leftside {
+        width: auto;
+    }
+    .dashboard-leftside ul {
+        height: auto;
+    }
+    table {
+        table-layout: fixed;
+        font-size: 8px;
+    }
+    img {
+        width: 25px;
+        height: 25px;
+    }
+  
+}
+@media(min-width:1024px) and (max-width:1200px){
+    table {
+        table-layout: auto;
+    }
+    .dashboard-leftside {
+        width: auto;
+    }
+    .dashboard-leftside ul {
+        padding-left: 0;
+    }
 }

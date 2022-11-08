@@ -8,8 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('frontend/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/css/all.min.css') }}">
+   
     <title>dashboard</title>
 </head>
 
@@ -17,7 +18,7 @@
     <div id="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="padding: 0">
                 <div class="dashboard">
                     <div id="navbar">
                         <nav class="navbar navbar-expand-lg bg-danger">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="dashboard-container">
                         <div class="row">
-                            <div class="col-lg-2 col-sm-12">
+                            <div class="col-lg-3 col-sm-12" style="padding: 0">
                                 <div class="dashboard-leftside" id="dashboard-leftside">
                                     <ul>
                                         @if ($data->role->first()->name == 'moderator')
@@ -77,7 +78,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-lg-10 col-sm-12">
+                            <div class="col-lg-9 col-sm-12" style="padding: 0">
                                 <div class="dashboard-rightside" id="dashboard-rightside">
                                     <!---------------------------------------------------------------->
                                     @if ($data->role->first()->name == 'moderator')
@@ -421,9 +422,9 @@
                                                             <th>#</th>
                                                             <th>category</th>
                                                             <th>brand</th>
-                                                            <th>productname</th>
-                                                            <th>product description</th>
-                                                            <th>price before</th>
+                                                            <th>name</th>
+                                                            <th>desc</th>
+                                                            <th>discount</th>
                                                             <th>price</th>
                                                             <th>quantity</th>
                                                             <th>image</th>
@@ -489,9 +490,9 @@
                                                         <th>#</th>
                                                         <th>category</th>
                                                         <th>brand</th>
-                                                        <th>productname</th>
-                                                        <th>productdescription</th>
-                                                        <th>price before</th>
+                                                        <th>name</th>
+                                                        <th>desc</th>
+                                                        <th>discount</th>
                                                         <th>price</th>
                                                         <th>quantity</th>
                                                         <th>image</th>
