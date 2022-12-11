@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
-
+body,
+.dashboard {
+    width: 100%;
+    overflow-x: hidden;
+}
 img {
     width: 100%;
 }
@@ -45,7 +49,15 @@ li {
     border: 5px solid violet;
     background-color: rgb(0, 153, 255);
     height: 100%;
-   
+}
+.table-parent{
+    overflow-x: auto;
+    /* clear: both; */
+    padding: 0px 10px;
+    width: 100%;
+}
+.dashboard-leftside ul {
+    padding-left: 0 !important;
 }
 
 .dashboard-leftside ul li a {
@@ -65,10 +77,12 @@ li {
     background-color: gold;
     padding: 5px;
 }
-
+.dashboard-leftside ul {
+    height: 100vh;
+}
 .update-modal {
     position: absolute;
-    top: 0%;
+    top: 2%;
     left: 37%;
     width: 550px;
     border: 1px solid silver;
@@ -231,6 +245,11 @@ input[name="name"] {
     width: 350px;
     height: 45px;
 }
+#uploadProductImage {
+    color: yellow;
+    cursor: pointer;
+    font-size: 20px;
+}
 
 @media (max-width: 450px) {
     .dashboard-leftside ul {
@@ -239,18 +258,18 @@ input[name="name"] {
     .dashboard-leftside {
         width: auto;
     }
-    table {
-        table-layout: fixed;
-    }
+    /* table {
+        min-width: rem-calc(640);
+    } */
     tbody tr td:last-child {
         display: block !important;
     }
-    tbody tr td {
+    /* tbody tr td {
         font-size: 8px;
-    }
-    thead tr th {
+    } */
+    /* thead tr th {
         font-size: 8px;
-    }
+    } */
     tbody tr td:last-child button {
         padding: 4px 4px;
     }
@@ -264,7 +283,12 @@ input[name="name"] {
         width: 25px !important;
         height: 25px !important;
     }
-    #catinput, #showcat,#brandname,#categorySelect,#brand,input[name=name] {
+    #catinput,
+    #showcat,
+    #brandname,
+    #categorySelect,
+    #brand,
+    input[name="name"] {
         width: auto;
     }
 }
@@ -275,24 +299,25 @@ input[name="name"] {
     .dashboard-leftside ul {
         height: auto;
     }
-    table {
-        table-layout: fixed;
-        font-size: 8px;
-    }
+
     img {
         width: 25px;
         height: 25px;
     }
-  
 }
-@media(min-width:1024px) and (max-width:1200px){
-    table {
+@media (min-width: 1024px) and (max-width: 1200px) {
+    /* table {
         table-layout: auto;
-    }
+    } */
     .dashboard-leftside {
         width: auto;
     }
     .dashboard-leftside ul {
         padding-left: 0;
+    }
+}
+@media (max-width: 1000px) {
+    .dashboard-leftside ul {
+        height: auto;
     }
 }

@@ -11,6 +11,11 @@ var updateForm = document.querySelectorAll(".updateForm");
 const dashboardRightSide = document.getElementById("dashboard-rightside");
 const dashboardLeftSide = document.getElementById("dashboard-leftside");
 var parent = document.querySelectorAll(".parent");
+let firstName = document.getElementById('firstname');
+let lastName = document.getElementById('lastname');
+let email = document.getElementById('email');
+let password = document.getElementById('password');
+let role = document.getElementById('role');
 
 closeBtn.forEach((x) => {
     x.addEventListener("click", () => {
@@ -18,6 +23,11 @@ closeBtn.forEach((x) => {
             x.style.display = "none";
             overlay.style.display = "none ";
             document.body.style.height = "auto";
+            firstName.value = null;
+            lastName.value = null;
+            email.value = null;
+            password.value = null;
+            role.options[0].selected ='selected';
         });
         deleteModal.forEach((y) => {
             y.style.display = "none";
@@ -33,6 +43,11 @@ cancelBtn.forEach((a) => {
             x.style.display = "none";
             overlay.style.display = "none";
             document.body.style.height = "auto";
+            firstName.value = null;
+            lastName.value = null;
+            email.value = null;
+            password.value = null;
+            role.options[0].selected ='selected';
         });
         deleteModal.forEach((y) => {
             y.style.display = "none";
@@ -46,7 +61,7 @@ openModal.forEach((x, y) => {
     x.addEventListener("click", () => {
         updateModel[y].style.display = "block";
         overlay.style.display = "block";
-        overlay.style.height = document.body.offsetHeight + "px";
+       
     });
 });
 
@@ -54,7 +69,7 @@ openDeleteModal.forEach((x, y) => {
     x.addEventListener("click", () => {
         deleteModal[y].style.display = "block";
         overlay.style.display = "block";
-        overlay.style.height = document.body.offsetHeight + "px";
+      
     });
 });
 
@@ -62,6 +77,11 @@ overlay.onclick = function () {
     updateModel.forEach((x) => {
         x.style.display = "none";
         overlay.style.display = "none";
+        firstName.value = null;
+        lastName.value = null;
+        email.value = null;
+        password.value = null;
+        role.options[0].selected ='selected';
     });
     deleteModal.forEach((x) => {
         x.style.display = "none";
@@ -74,7 +94,6 @@ updateModel.forEach((x, _y) => {
         x.style.display = "block";
         overlay.style.display = "block ";
     }
-    overlay.style.height = document.body.offsetHeight + "px";
 });
 
 const addProductBtn = document.getElementById("addProductBtn");
@@ -93,15 +112,71 @@ let addCategoryBtn = document.getElementById("addCategoryBtn");
 let addBrandBtn = document.getElementById("addBrandBtn");
 let addCategory = document.getElementById("addCategory");
 let catdisplay = document.getElementById("catdisplay");
+let catInput = document.getElementById('catinput');
+let brandName = document.getElementById('brandname')
+let showCat = document.getElementById('showcat');
+//
+let categorySelect = document.getElementById('categorySelect'); //done
+let brand = document.getElementById('brand');//done
+let pname = document.getElementById('pname');//done
+let pdesc = document.getElementById('pdesc');//done
+let pbefore = document.getElementById('pbefore'); 
+//..uploadProductImage..////done
+// icon appear again //done
+//..uploadBtn..////done
+//clear value//done
+//..discount..////done
+//div appear again//done
+//...yes no ...// //done
+// clear radio value//done
+//pbefore clear value//done
+//price clear price value
+let price = document.getElementById('price');
+//quantity clear quantity value
+let quantity = document.getElementById('quantity');
+
 
 if (myCartBtn != null) {
     myCartBtn.addEventListener("click", () => {
         myCart.style.display = "block";
         userTable.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+        categorySelect.options[0].selected = 'selected';
+        brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+        uploadBtn.value = null;
+        yes.checked = false;
+        no.checked = false;
+       discount.style.display= 'block';
+       before.style.display='none';
+       pbefore.value = null;
+       price.value = null;
+       quantity.value = null;
+        
     });
     showUserBtn.addEventListener("click", () => {
         userTable.style.display = "inline-table";
         myCart.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+       yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+       
     });
 }
 
@@ -113,6 +188,23 @@ if (showUsersBtn != null) {
         showCart.style.display = "none";
         addCategory.style.display = "none";
         catdisplay.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+        yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+    
     });
 }
 if (addProductBtn != null) {
@@ -123,6 +215,23 @@ if (addProductBtn != null) {
         addCategory.style.display = "none";
         catdisplay.style.display = "none";
         showCart.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+         yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+       
     });
 }
 if (showProductBtn != null) {
@@ -133,6 +242,23 @@ if (showProductBtn != null) {
         showProduct.style.display = "block";
         addCategory.style.display = "none";
         catdisplay.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+        yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+   
     });
 }
 if (showCartBtn != null) {
@@ -143,6 +269,23 @@ if (showCartBtn != null) {
         showCart.style.display = "block";
         addCategory.style.display = "none";
         catdisplay.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+       yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+       
     });
 }
 
@@ -154,6 +297,23 @@ if (addCategoryBtn != null) {
         showCart.style.display = "none";
         catdisplay.style.display = "none";
         addCategory.style.display = "block";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+      yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+      
     });
 }
 if (addBrandBtn != null) {
@@ -164,6 +324,23 @@ if (addBrandBtn != null) {
         showCart.style.display = "none";
         catdisplay.style.display = "block";
         addCategory.style.display = "none";
+        catInput.value=null;
+        showCat.options[0].selected = 'selected';
+        brandName.value = null;
+         categorySelect.options[0].selected = 'selected';
+           brand.options[0].selected = "selected";
+        pname.value = null;
+        pdesc.value = null;
+         uploadBtn.value = null;
+          yes.checked = false;
+        no.checked = false;
+        discount.style.display= 'block';
+        before.style.display='none';
+           pbefore.value = null;
+             price.value = null;
+       quantity.value = null;
+
+      
     });
 }
 let addbr = document.getElementById("addbr");
@@ -185,11 +362,15 @@ if (addpr != null) {
         addpr.innerText = "adding...";
     });
 }
-
+let uploadProductImage = document.getElementById('uploadProductImage');
+let uploadBtn = document.getElementById('upload-btn');
 let yes = document.getElementById("yes");
 let no = document.getElementById("no");
 let discount = document.querySelector(".discount");
 let before = document.getElementById("before");
+uploadProductImage.onclick = function(){
+    uploadBtn.click();
+}
 if (yes != null) {
     yes.addEventListener("click", () => {
         discount.style.display = "none";
